@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "0ee8b691-cc16-4139-9b76-33424160dd2b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jjj",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status code name should have an OK string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.getpostman.com/collections/cdb092e261ebfa78f493",
+					"protocol": "https",
+					"host": [
+						"www",
+						"getpostman",
+						"com"
+					],
+					"path": [
+						"collections",
+						"cdb092e261ebfa78f493"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
